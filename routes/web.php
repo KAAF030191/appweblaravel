@@ -8,5 +8,10 @@ Route::get('/persona/editar/{idPersona?}','PersonaController@actionEditar')->whe
 
 //sumar
 
-Route::get('/ejemplo/sumar/{valora}/{valorb}','EjemploController@actionSumar');
+Route::get('/ejemplo/operarsuma','EjemploController@actionOperarSuma');
+
+//mostrarresultado
+Route::post('/ejemplo/mostrarresultado','EjemploController@actionMostrarResultado');
+
+
 ?>
