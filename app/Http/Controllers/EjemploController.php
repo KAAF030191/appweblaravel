@@ -3,9 +3,10 @@ namespace App\http\controllers;
 
 class EjemploController extends Controller 
 {
-	public function actionsumar($idSumar=null)
+	public function actionsumar($numerouno,$numerodos)
 	{
-		return view('ejemplo/sumar', ['idSumar' => $idSumar]);
+		$resultado=$numerouno+$numerodos;
+		return view('ejemplo/sumar', ['resultado' = $resultado]); 
 	}
 }
 

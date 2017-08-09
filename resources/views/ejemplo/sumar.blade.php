@@ -1,2 +1,1 @@
-<label>l suma es: </label>
-<h1><?=$idSumar?></h1>
+<h1>suma es: {{$resultado}}</h1>
