@@ -6,4 +6,6 @@ Route::get('/persona/editar/{idPersona?}', 'PersonaController@actionEditar')->wh
 
 //EJEMPLO
 Route::get('/ejemplo/sumar/{numeroUno}/{numeroDos}', 'EjemploController@actionSumar')->where(['numeroUno' => '[0-9]+', 'numeroDos' => '[0-9]+']);
+Route::get('/ejemplo/operarsuma', 'EjemploController@actionOperarSuma');
+Route::post('/ejemplo/mostrarresultado', 'EjemploController@actionMostrarResultado');
 ?>
