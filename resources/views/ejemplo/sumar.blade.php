@@ -1,3 +1,3 @@
-<h2>la suma es :</h2>
+<h2>la suma es :   {{$sumar}}</h2> 
 
-<?=$sumar?>
+
