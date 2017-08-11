@@ -12,7 +12,7 @@ class PersonaController extends Controller
 		return view('persona/editar',['idPersona'=>$idPersona]);
 	}
 
-	public function actioInsertar(Request @requet)
+	public function actionInsertar(Request $request)
 	{
 		if($_POST)
 		{
