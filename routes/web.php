@@ -2,6 +2,8 @@
 Route::get('/', 'IndexController@actionIndex');
 
 //PERSONA
+Route::get('/persona/insertar', 'PersonaController@actionInsertar');
+Route::post('/persona/insertar', 'PersonaController@actionInsertar');
 Route::get('/persona/editar/{idPersona?}', 'PersonaController@actionEditar')->where(['idPersona' => '[0-9]*']);
 
 //EJEMPLO
