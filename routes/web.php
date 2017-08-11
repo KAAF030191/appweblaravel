@@ -3,7 +3,7 @@ Route::get('/', 'IndexController@actionIndex');
 
 
 //editar
-
+Route::match(['get','post'],'/persona/insertar','PersonaController@actionInsertar');
 Route::get('/persona/editar/{idPersona?}','PersonaController@actionEditar')->where(['idPersona' => '[0-9]*']);
 
 //sumar
