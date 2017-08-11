@@ -30,6 +30,11 @@
 			width: 100%;
 		}
 
+		header > a
+		{
+			color: #ffffff;
+		}
+
 		footer
 		{
 			background-color: #f5f5f5;
@@ -45,7 +50,7 @@
 </head>
 <body>
 	<header>
-		<h1>Esta sección es la cabecera</h1>
+		@include('template/partial/menuprincipal')
 	</header>
 	<section style="min-height: 400px;">
 		@yield('cuerpoGeneral')
