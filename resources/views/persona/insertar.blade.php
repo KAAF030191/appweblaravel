@@ -7,7 +7,7 @@
 	<input type="submit" value="Registrar datos">
 </form>
 <div style="border: 1px solid #999999;margin: 5px;">
-	<b>Nombre: </b>
+	<b>Nombre: </b>{{$nombre or ''}}
 	<br>
-	<b>Apellido: </b>
+	<b>Apellido: </b>{{$apellido or ''}}
 </div>
