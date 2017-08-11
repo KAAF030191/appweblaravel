@@ -22,9 +22,8 @@
 </head>
 <body>
 <header>
-  <a href="#">Inicio</a>
-  <a href="#">Nosotrs</a>
   <h1>Esta seccion es la cabesera</h1>
+    @include('parcial/menu')
 </header>
   <section>
 @yield('cuerpoGeneral')
