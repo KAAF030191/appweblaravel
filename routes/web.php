@@ -6,6 +6,7 @@ Route::get('ejemplo/sumar/{parametro1}/{parametro2}','EjemploController@actiones
 Route::get('ejemplo/operarSuma','EjemploController@actionoperarSuma');
 Route::post('ejemplo/mostrarResultado','EjemploController@actionomostrarResultado');
 //persona
+
 //Route::math(['get','post'],'/persona/insertar','PersonaController@actionInsertar');
 Route::get('/persona/insertar','PersonaController@actionInsertar');
 Route::post('/persona/insertar','PersonaController@actionInsertar');
