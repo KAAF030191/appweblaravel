@@ -12,10 +12,10 @@ class PersonaController extends Controller
 		{
       $nombre= $request['nombre'];
       $apellido=$request['apellido'];
-      //return view('persona/create',['nombre'=>$nombre,'apellido'=>$apellido]);
-      return redirect('/persona/insertar');
+      return view('persona/create',['nombre'=>$nombre,'apellido'=>$apellido]);
+      //return redirect('/persona/insertar');
 			}
-return view('persona/create');
+      return view('persona/create');
   }
   public function actioneditar($idPersona=null)
   {
