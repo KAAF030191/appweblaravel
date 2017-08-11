@@ -1,3 +1,5 @@
+@extends('template.templategeneric')
+@section('cuerpoGeneral')
 <form action="{{url('persona/insertar')}}" method="post">
 	<label for="txtNombre">Nombre</label>
 	<input type="text" id="txtNombre" name="txtNombre">
@@ -11,3 +13,4 @@
 	<br>
 	<b>Apellido: </b>{{$apellido or ''}}
 </div>
+@endsection
