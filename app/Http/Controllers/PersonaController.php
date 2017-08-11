@@ -19,7 +19,7 @@ class PersonaController extends Controller
 
 			$nombre=$request->input('txtNombre');
 			$apellido=$request->input('txtApellido');
-			return view ('persona/insertar',['nombre'=>$nombre],['apellido'=>$apellido]);
+			return view ('persona/insertar',['nombre'=>$nombre,'apellido'=>$apellido]);
 			//return redirect('/persona/insertar');
 		}
 			return view ('persona/insertar');
