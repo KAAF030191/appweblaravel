@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>App Laravel</title>
-<style media="screen">
-  header{
-    background-color: green;
-  }
-  footer{
-    background-color: yellow;
-    display:block;
+    <head>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <meta content="ie=edge" http-equiv="X-UA-Compatible">
+                    <title>
+                        App Laravel
+                    </title>
+                    <link href="{{asset('css/cssTemplate.css')}}" rel="stylesheet" type="text/css">
 
-  }
-  h1{
-    margin-left: inherit;
+                    <link href="{{asset('css/normalize.min.css')}}" rel="stylesheet" type="text/css">
+                    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">  
 
-  }
-</style>
-</head>
-<body>
-<header>
-  <h1>Esta seccion es la cabesera</h1>
-    @include('parcial/menu')
-</header>
-  <section>
-@yield('cuerpoGeneral')
-  </section>
-  <footer>
-    <h2>Esta seecion es el cuerpo es el pie</h2>
-  </footer>
-</body>
+                     <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
+                    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+                   
+                    
+                      
+                </meta>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Esta seccion es la cabesera
+            </h1>
+        </header>
+        @include('parcial/menu')
+        <section>
+            @yield('cuerpoGeneral')
+        </section>
+        <footer>
+            <h2>
+                Esta seecion es el cuerpo es el pie
+            </h2>
+        </footer>
+    </body>
+
+
 </html>
