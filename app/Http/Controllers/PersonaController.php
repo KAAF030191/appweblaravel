@@ -1,8 +1,20 @@
 <?php
 namespace App\Http\Controllers;
-
+use Illuminate\Http\Request;
 class PersonaController extends Controller
 {
+	public function actionInsertar(Request $request)
+	{
+		if($_POST)
+		{
+			$nombre=$request->input('txtNombre');
+			$apellido=$request->input('txtApellido');
+			//return view('persona/insertar', ['nombre' => $nombre, 'apellido' => $apellido]);
+			return redirect('/persona/insertar');
+		}
+		
+		return view('persona/insertar');
+	}
 	public function actionEditar($idPersona=null)
 	{
 		return view('persona/editar', ['idPersona' => $idPersona]);
