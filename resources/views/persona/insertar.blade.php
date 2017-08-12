@@ -13,4 +13,5 @@
 	<br>
 	<b>Apellido: </b>{{$apellido or ''}}
 </div>
+...
 @endsectiond
