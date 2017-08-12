@@ -13,4 +13,6 @@ echo "Hola $nombre";
 {{'Este es $nombre'}}
 <br>
 {{"Este es $nombre"}}
+<hr>
+{{date('Y-m-d H:i:s')}}
 @endsection

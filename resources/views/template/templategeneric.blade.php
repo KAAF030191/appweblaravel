@@ -4,49 +4,11 @@
 	<meta charset="UTF-8">
 	<title>App Laravel</title>
 
-	<style>
-		h1
-		{
-			color: #ffffff;
-			margin: 0px;
-			margin-bottom: 7px;
-			padding: 0px;
-			padding-bottom: 5px;
-			padding-top: 5px;
-		}
+	<link rel="stylesheet" href="{{asset('css/cssTemplate.css')}}">
+	<link rel="stylesheet" href="{{asset('css/normalize.min.css')}}">
+	<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 
-		body
-		{
-			margin: 0px;
-			padding: 0px;
-		}
-
-		header
-		{
-			background-color: #6282A3;
-			display: block;
-			margin: 0px;
-			padding: 0px;
-			width: 100%;
-		}
-
-		header > a
-		{
-			color: #ffffff;
-		}
-
-		footer
-		{
-			background-color: #f5f5f5;
-			display: block;
-			margin: 0px;
-			margin-top: 10px;
-			padding: 0px;
-			padding-bottom: 5px;
-			padding-top: 5px;
-			width: 100%;
-		}
-	</style>
+	<script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
 </head>
 <body>
 	<header>
@@ -58,5 +20,7 @@
 	<footer>
 		<h2>Esta sección es el pie</h2>
 	</footer>
+
+	<script src="{{asset('js/bootstrap.min.js')}}"></script>
 </body>
 </html>
