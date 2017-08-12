@@ -14,7 +14,7 @@
 	<header>
 		@include('template/partial/menuprincipal')
 	</header>
-	<section style="min-height: 400px;">
+	<section style="min-height: 400px;padding: 7px;">
 		@yield('cuerpoGeneral')
 	</section>
 	<footer>
